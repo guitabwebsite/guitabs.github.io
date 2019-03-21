@@ -1,3 +1,2 @@
 ## GuiTabs
-
-Here is some text
+### an automatic guitar transcription service written by David Hofferber, Joseph Eligon, Joshua Fields
