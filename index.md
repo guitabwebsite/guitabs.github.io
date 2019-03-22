@@ -22,16 +22,6 @@ Even discounting the different positions your hand can be in while playing notes
 
 Even though the notes are important, the fingerings are probably the most important part of the song in order to be viable to play. However, due to the complexity of the fingering, much of how the fingerings are determined depend upon complex distance metrics
 
-### Related Work
-Bello and Monti in “Techniques for Automatic Music Transcription” give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
-
-Dlabal and Wedeen in “Generating Sheet Music From Audio Files” give their approach for going from audio to notes and give some detailed note-detection information
-
-Barbancho, et. Al in “Automatic Transcription of Guitar Chords and Fingering” discusses a way of feature extraction from many guitar samples to glean useful metrics for potential fingerings.
-
-Tuohy and Walter describe a method to generate guitar tabs for audio including chords, but do not have fingerings.
-
-
 ### Pipeline
 1. The user indicates an audio file to transcribe
 2. We run CREPE on the audio file, determining new notes based off of having a sufficient change in Hz. If CREPE is not confident for too long, we also terminate the current note.
@@ -46,6 +36,22 @@ We were able to successfully transcribe audio into notated guitar tablature. How
 We evaluated our results based on their pitch accuracy to the actual notes. This was done through human feedback, where the user told us whether or not the pitches sound right.
 
 We evaluated our results based on the fingerings ease of playability. This was done by having several guitar players play the generated tablature and give feedback on how natural it was for them to play it.
+
+## Additional Information
+
+### Motivation
+People want to be able to play music, and the majority of the guitar repertoire is only available as audio
+
+Manual transcription can often take a long time and is also difficult for beginners
+
+### Related Work
+Bello and Monti in “Techniques for Automatic Music Transcription” give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
+
+Dlabal and Wedeen in “Generating Sheet Music From Audio Files” give their approach for going from audio to notes and give some detailed note-detection information
+
+Barbancho, et. Al in “Automatic Transcription of Guitar Chords and Fingering” discusses a way of feature extraction from many guitar samples to glean useful metrics for potential fingerings.
+
+Tuohy and Walter describe a method to generate guitar tabs for audio including chords, but do not have fingerings.
 
 ### Future Work
 In the future, we could fine tune weights of fingering graph or use an alternative machine learning approach, as well as integrate beat onsets in pitch tracking.
