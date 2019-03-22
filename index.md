@@ -52,6 +52,8 @@ LilyPond tab generation
 ![Output using GuiTabs for tablature](https://raw.githubusercontent.com/guitabwebsite/guitabwebsite.github.io/master/images/GuiTab.png)
 GuiTab tab generation
 
+![](https://raw.githubusercontent.com/guitabwebsite/guitabwebsite.github.io/master/audio/test1aud.wav)
+
 ### Evaluation Metrics
 We evaluated our results based on their pitch accuracy to the actual notes. This was done through human feedback, where the user told us whether or not the pitches sound right.
 
