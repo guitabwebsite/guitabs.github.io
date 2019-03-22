@@ -38,11 +38,7 @@ Tuohy and Walter describe a method to generate guitar tabs for audio including c
 
 
 ### Results
-On monophonic audio without noise that it is 16 bit depth we are able to mostly successfully transcribe audio into tablature
-
-However, a few notes are sometimes an octave off due to CREPE (and pitch trackers in general) having issues determining octaves
-
-The fingerings will occasionally put more emphasis on shifting positions and repeatedly using your pinky than it does on using your ring finger and shifting at a later time
+We were able to successfully transcribe audio into notated guitar tablature. However, that audio had to be monophonic, have very little noise, and be of 16-bit depth. The results were also not always perfect, as a few notes were sometimes an octave off due to our pitch tracker CREPE having trouble determining the octave. Although it should be noted that pitch trackers in general have this issue. Our fingering algorithm will often put emphasis of shifting hand positions and using the pinky instead of using the ring finger and shifting at a later time. This can be a bit uncomfortable for many guitarists.
 
 ### Evaluation Metrics
 We evaluated our results based on their pitch accuracy to the actual notes. This was done through human feedback, where the user told us whether or not the pitches sound right.
