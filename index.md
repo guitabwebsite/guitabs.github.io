@@ -106,6 +106,7 @@ In the future, we could fine tune weights of fingering graph or use an alternati
 In an ideal world, we would make GuiTabs capable of polyphonic input.
 
 
+{: audio .text-center}
 
 
 
