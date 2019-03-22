@@ -2,7 +2,7 @@
 ### an automatic guitar transcription service written by David Hofferber, Joseph Eligon, Joshua Fields
 
 ### Contact Us  
-{dch, JosephEligon2019, joshua.fields }@u.northwestern.edu
+{dch, JosephEligon2019, joshua.fields}@u.northwestern.edu
 
 part of Machine Perception of Audio and Music with Professor Bryan Pardo at Northwestern University
 
