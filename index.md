@@ -1,5 +1,5 @@
-# GuiTabs: Transcription of Audio to Guitar Tabulature
-### David Hofferber, Joseph Eligon, Joshua Fields
+# GuiTabs: Audio to Guitar Tabulature
+## David Hofferber, Joseph Eligon, Joshua Fields
 
 ### Contact Us  
 {dch, JosephEligon2019, joshua.fields}@u.northwestern.edu
