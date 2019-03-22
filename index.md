@@ -1,12 +1,12 @@
-# GuiTabs
-### an automatic guitar transcription service written by David Hofferber, Joseph Eligon, Joshua Fields
+# GuiTabs: Transcription of Audio to Guitar Tabulature
+### David Hofferber, Joseph Eligon, Joshua Fields
 
 ### Contact Us  
 {dch, JosephEligon2019, joshua.fields}@u.northwestern.edu
 
-part of Machine Perception of Audio and Music with Professor Bryan Pardo at Northwestern University
+Created for credit in the course Machine Perception of Audio and Music, as taught by Professor Bryan Pardo at Northwestern University.
 
-files can be found in the GuiTabs repository, found at <https://github.com/dchoff/GuiTabs>
+Files can be found in the GuiTabs repository, which can be found here: <https://github.com/dchoff/GuiTabs>
 
 ## Synopsis of Work
 
