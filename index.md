@@ -31,6 +31,17 @@ Even though the notes are important, the fingerings are probably the most import
 ![Flowchart of our pipeline](https://github.com/guitabwebsite/images/pipeline.png)
 
 
+## Details on Fingering Algorithm
+
+We initially parse our song with 𝑘 notes into a graph structure of 𝑘+2 layers, where each vertex is a way to play the 𝑖^𝑡ℎ note.
+
+We then connect each vertex layer to the next vertex layer with directed edges, where weights are assigned by a distance metric between note tuples
+
+Once we have our finalized graph, we perform Dijkstra’s Algorithm to find the shortest path through the graph based on the weighted edges, which returns the fingerings which require the least movement based on our distance metrics.
+
+![Visualization of graph from algorithm](https://github.com/guitabwebsite/images/algorithmgraph.png)
+
+
 ### Results
 We were able to successfully transcribe audio into notated guitar tablature. However, that audio had to be monophonic, have very little noise, and be of 16-bit depth. The results were also not always perfect, as a few notes were sometimes an octave off due to our pitch tracker CREPE having trouble determining the octave. Although it should be noted that pitch trackers in general have this issue. Our fingering algorithm will often put emphasis of shifting hand positions and using the pinky instead of using the ring finger and shifting at a later time. This can be a bit uncomfortable for many guitarists.
 
