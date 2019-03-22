@@ -68,7 +68,17 @@ $ pip install --upgrade tensorflow
 $ pip install crepe
 ```
 2. Install MuseScore3
-3. Add the bin folder of Muse Score 3 to your environment variables
+3. Add the bin folder of MuseScore3 to your environment variables
+4. Install librosa into your python environment
+
+### Usage Instructions
+1. Within your python environment, navigate to the ***Data*** folder
+2. Run the following:
+```
+$ python ./main_crepe.py filename.wav
+```
+_filename.wav_ must be a 16 bit depth WAV file
+
 
 ### Related Work
 Bello and Monti in _Techniques for Automatic Music Transcription_ give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
