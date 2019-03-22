@@ -2,9 +2,9 @@
 ### an automatic guitar transcription service written by David Hofferber, Joseph Eligon, Joshua Fields
 
 ### Contact Us  
-DavidHofferber2020@u.northwestern.edu
-JosephEligon2019@u.northwestern.edu
-JoshuaFields2019@u.northwestern.edu
+DavidHofferber2020@u.northwestern.edu  
+JosephEligon2019@u.northwestern.edu  
+JoshuaFields2019@u.northwestern.edu  
 
 part of Machine Perception of Audio and Music with Professor Bryan Pardo at Northwestern University
 
