@@ -33,11 +33,11 @@ Even though the notes are important, the fingerings are probably the most import
 
 ### Details on Fingering Algorithm
 
-We initially parse our song with 𝑘 notes into a graph structure of 𝑘+2 layers, where each vertex is a way to play the 𝑖^𝑡ℎ note.
+We initially parse our song with _k_ notes into a graph structure of 𝑘+2 layers, where each vertex is a way to play the _i<sup>th</sup>_ note.
 
 We then connect each vertex layer to the next vertex layer with directed edges, where weights are assigned by a distance metric between note tuples
 
-Once we have our finalized graph, we perform Dijkstra’s Algorithm to find the shortest path through the graph based on the weighted edges, which returns the fingerings which require the least movement based on our distance metrics.
+Once we have our finalized graph, we perform Dijkstra's Algorithm to find the shortest path through the graph based on the weighted edges, which returns the fingerings which require the least movement based on our distance metrics.
 
 ![Visualization of graph from algorithm](https://raw.githubusercontent.com/guitabwebsite/guitabwebsite.github.io/master/images/algorithmgraph.png)
 The vertex layers of our song, where 𝑣_𝑆 is a special node representing the start of our graph structure, 𝑣_𝐸 is a special node representing the end of our graph structure.
