@@ -45,6 +45,10 @@ Once we have our finalized graph, we perform Dijkstra’s Algorithm to find the 
 ### Results
 We were able to successfully transcribe audio into notated guitar tablature. However, that audio had to be monophonic, have very little noise, and be of 16-bit depth. The results were also not always perfect, as a few notes were sometimes an octave off due to our pitch tracker CREPE having trouble determining the octave. Although it should be noted that pitch trackers in general have this issue. Our fingering algorithm will often put emphasis of shifting hand positions and using the pinky instead of using the ring finger and shifting at a later time. This can be a bit uncomfortable for many guitarists.
 
+![Output using Lilypond for tablature](https://github.com/guitabwebsite/guitabwebsite.github.io/blob/master/images/lilyTab.png)
+
+![Output using GuiTabs for tablature](https://github.com/guitabwebsite/guitabwebsite.github.io/blob/master/images/GuiTab.png)
+
 ### Evaluation Metrics
 We evaluated our results based on their pitch accuracy to the actual notes. This was done through human feedback, where the user told us whether or not the pitches sound right.
 
