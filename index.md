@@ -6,6 +6,8 @@
 
 part of Machine Perception of Audio and Music with Professor Bryan Pardo at Northwestern University
 
+files can be found in the GuiTabs repository, found at <https://github.com/dchoff/GuiTabs>
+
 ## Synopsis of Work
 
 ### Motivation
