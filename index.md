@@ -59,17 +59,12 @@ We evaluated our results based on the fingerings ease of playability. This was d
 
 ## Additional Information
 
-### Motivation
-People want to be able to play music, and the majority of the guitar repertoire is only available as audio
-
-Manual transcription can often take a long time and is also difficult for beginners
-
 ### Installation Instructions
 Before running GuiTabs, you must satisfy the following requirements:
 
 1. Install Crepe. To do so, run the following:
 ```
-$ pip install --upgrade tensorflow  # if you don't already have tensorflow >= 1.6.0
+$ pip install --upgrade tensorflow 
 $ pip install crepe
 ```
 2. Install MuseScore3
