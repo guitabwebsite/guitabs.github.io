@@ -1,4 +1,4 @@
-## GuiTabs
+# GuiTabs
 ### an automatic guitar transcription service written by David Hofferber, Joseph Eligon, Joshua Fields
 
 ### Contact Us
@@ -7,6 +7,8 @@ JosephEligon2019@u.northwestern.edu
 JoshuaFields2019@u.northwestern.edu
 
 part of Machine Perception of Audio and Music at Northwestern University
+
+## Synopsis of Work
 
 ### Motivation
 People want to be able to play music, and the majority of the guitar repertoire is only available as audio
