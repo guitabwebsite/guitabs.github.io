@@ -65,11 +65,11 @@ People want to be able to play music, and the majority of the guitar repertoire 
 Manual transcription can often take a long time and is also difficult for beginners
 
 ### Related Work
-Bello and Monti in “Techniques for Automatic Music Transcription” give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
+Bello and Monti in _Techniques for Automatic Music Transcription_ give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
 
-Dlabal and Wedeen in “Generating Sheet Music From Audio Files” give their approach for going from audio to notes and give some detailed note-detection information
+Dlabal and Wedeen in _Generating Sheet Music From Audio Files_ give their approach for going from audio to notes and give some detailed note-detection information
 
-Barbancho, et. Al in “Automatic Transcription of Guitar Chords and Fingering” discusses a way of feature extraction from many guitar samples to glean useful metrics for potential fingerings.
+Barbancho, et. Al in _Automatic Transcription of Guitar Chords and Fingering_ discusses a way of feature extraction from many guitar samples to glean useful metrics for potential fingerings.
 
 Tuohy and Walter describe a method to generate guitar tabs for audio including chords, but do not have fingerings.
 
