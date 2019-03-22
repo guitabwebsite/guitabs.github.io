@@ -6,7 +6,7 @@ David Hofferber2020@u.northwestern.edu
 JosephEligon2019@u.northwestern.edu
 JoshuaFields2019@u.northwestern.edu
 
-part of Machine Perception of Audio and Music at Northwestern University
+part of Machine Perception of Audio and Music with Professor Bryan Pardo at Northwestern University
 
 ## Synopsis of Work
 
