@@ -31,7 +31,7 @@ Even though the notes are important, the fingerings are probably the most import
 ![Flowchart of our pipeline](https://github.com/guitabwebsite/guitabwebsite.github.io/blob/master/images/pipeline.png)
 
 
-## Details on Fingering Algorithm
+### Details on Fingering Algorithm
 
 We initially parse our song with 𝑘 notes into a graph structure of 𝑘+2 layers, where each vertex is a way to play the 𝑖^𝑡ℎ note.
 
