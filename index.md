@@ -29,6 +29,14 @@ Even though the notes are important, the fingerings are probably the most import
 ![Flowchart of our pipeline](https://raw.githubusercontent.com/guitabwebsite/guitabwebsite.github.io/master/images/pipeline.png)  
 
 
+### Details on Usage of Crepe
+
+CREPE runs a Deep Convolutional Neural Network on 16-bit depth audio files (currently only WAV) and produces some data for us. It generates that data and puts it into a spreadsheet with the columns timestamp (s), frequency (Hz), and Confidence. Timestamp is the time in the audio file, taken every 0.01 seconds, frequency is the pitch CREPE interprets at that timestamp, and confidence is CREPE's certainty that it is correct.
+
+We generate this spreadsheet for our audio files and use the data to produce a list of tuples in the form (notes, durations). In order to do this, we find areas where CREPE has a 60% or higher confidence and average similar frequencies in that range. Once we run into sufficiently different frequencies or areas of low confidence, we add that note and its duration to the final note list. 
+
+Once we have our notes and durations, we make a few optimizations. We check that the pitches of each note are within a certain range such that we don't get unreasonably high or low notes that may happen due to artifacting. We also deal with a common issue in pitch tracking where the pitch tracker reads one note as two, an octave apart. Although there could be false positives, we combine notes that are an octave apart when one note is sufficiently shorter in duration than the other.
+
 ### Details on Fingering Algorithm
 
 We initially parse our song with _k_ notes into a graph structure of _k+2_ layers, where each vertex is a way to play the _i<sup>th</sup>_ note.
