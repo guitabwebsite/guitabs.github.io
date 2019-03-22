@@ -2,7 +2,7 @@
 ### an automatic guitar transcription service written by David Hofferber, Joseph Eligon, Joshua Fields
 
 ### Contact Us
-David Hofferber2020@u.northwestern.edu
+DavidHofferber2020@u.northwestern.edu
 JosephEligon2019@u.northwestern.edu
 JoshuaFields2019@u.northwestern.edu
 
@@ -65,6 +65,17 @@ We evaluated our results based on the fingerings ease of playability. This was d
 People want to be able to play music, and the majority of the guitar repertoire is only available as audio
 
 Manual transcription can often take a long time and is also difficult for beginners
+
+### Installation Instructions
+Before running GuiTabs, you must satisfy the following requirements:
+
+1. Install Crepe. To do so, run the following:
+```
+$ pip install --upgrade tensorflow  # if you don't already have tensorflow >= 1.6.0
+$ pip install crepe
+```
+2. Install MuseScore3
+3. Add the bin folder of Muse Score 3 to your environment variables
 
 ### Related Work
 Bello and Monti in _Techniques for Automatic Music Transcription_ give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
