@@ -35,12 +35,14 @@ Even though the notes are important, the fingerings are probably the most import
 
 We initially parse our song with _k_ notes into a graph structure of _k+2_ layers, where each vertex is a way to play the _i<sup>th</sup>_ note.
 
-We then connect each vertex layer to the next vertex layer with directed edges, where weights are assigned by a distance metric between note tuples
+We then connect each vertex layer to the next vertex layer with directed edges, where weights are assigned by a distance metric between note tuples. Our note tuples represent a node structure from which the way that note is played can be extracted. Due to this, each note tuple contains the following information: the string it is played on, the fret it is played on, the finger used to play the note, the position of the player's hand (i.e. what fret the index finger is closest to, even if not used to play a note), and an occurrence number which states where this particular note occurs in the song.
+
+Our distance metric takes in two note tuples at a time, and uses a variety of cases to determine what edge weight to assign to the edge between two notes. The most impactful results come from the position of your hand in between the two notes, resulting in our shortest path penalizing large hand shifts on the fretboard unless necessary. There are numerous other cases the distance metric takes into consideration, mostly involving the interaction between finger placement relative to the strings notes are played on.
 
 Once we have our finalized graph, we perform Dijkstra's Algorithm to find the shortest path through the graph based on the weighted edges, which returns the fingerings which require the least movement based on our distance metrics.
 
 ![Visualization of graph from algorithm](https://raw.githubusercontent.com/guitabwebsite/guitabwebsite.github.io/master/images/algorithmgraph.png)  
-The vertex layers of our song, where _v<sub>s</sub>_ is a special node representing the start of our graph structure and _v<sub>E</sub>_ ¸ is a special node representing the end of our graph structure.
+The vertex layers of our song, where _v<sub>s</sub>_ is a special node representing the start of our graph structure and _v<sub>E</sub>_ Â¸ is a special node representing the end of our graph structure.
 
 
 ### Results
@@ -63,17 +65,6 @@ We evaluated our results based on the fingerings ease of playability. This was d
 People want to be able to play music, and the majority of the guitar repertoire is only available as audio
 
 Manual transcription can often take a long time and is also difficult for beginners
-
-### Installation Instructions
-Before running GuiTabs, you must satisfy the following requirements:
-
-1. Install Crepe. To do so, run the following:
-```
-$ pip install --upgrade tensorflow  # if you don't already have tensorflow >= 1.6.0
-$ pip install crepe
-```
-2. Install MuseScore3
-3. Add the bin folder of Muse Score 3 to your environment variables
 
 ### Related Work
 Bello and Monti in _Techniques for Automatic Music Transcription_ give a rough blueprint of producing audio transcriptions from audio and some methods that we have not endeavored to use in this project.
